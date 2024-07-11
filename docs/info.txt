@@ -28,7 +28,4 @@ Attribute Information:
 12. number of major vessels (0-3) colored by flourosopy
 13. thal: 0 = normal; 1 = fixed defect; 2 = reversable defect
 
->> The names and social security numbers of the patients were recently removed from the database, 
-replaced with dummy values.
-
-dataset_link = https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
+Data source link : https://archive.ics.uci.edu/dataset/45/heart+disease 
