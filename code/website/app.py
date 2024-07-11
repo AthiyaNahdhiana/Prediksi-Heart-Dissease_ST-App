@@ -2,11 +2,13 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+#model 1 KNN
 model1_filename = 'C:/Users/athiy/Documents/1-KULIAH UDINUS/8 GENAP 23-24/Bengkel Koding/UAS/Heart-Disease-main/Heart-Disease-main/model/modelKNN.pkl'
 
 with open(model1_filename, 'rb') as file:
     model1 = pickle.load(file)
 
+#model 2 Random Forest
 model2_filename = 'C:/Users/athiy/Documents/1-KULIAH UDINUS/8 GENAP 23-24/Bengkel Koding/UAS/Heart-Disease-main/Heart-Disease-main/model/modelRandForest.pkl'
 
 with open(model2_filename, 'rb') as file:
