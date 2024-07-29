@@ -3,13 +3,13 @@ import pandas as pd
 import pickle
 
 #model 1 KNN
-model1_filename = 'C:/Users/athiy/Documents/1-KULIAH UDINUS/8 GENAP 23-24/Bengkel Koding/UAS/Heart-Disease-main/Heart-Disease-main/model/modelKNN.pkl'
+model1_filename = '../../model/modelKNN.pkl'
 
 with open(model1_filename, 'rb') as file:
     model1 = pickle.load(file)
 
 #model 2 Random Forest
-model2_filename = 'C:/Users/athiy/Documents/1-KULIAH UDINUS/8 GENAP 23-24/Bengkel Koding/UAS/Heart-Disease-main/Heart-Disease-main/model/modelRandForest.pkl'
+model2_filename = '../../model/modelRandForest.pkl'
 
 with open(model2_filename, 'rb') as file:
     model2 = pickle.load(file)
@@ -44,7 +44,7 @@ def main():
     thal = st.selectbox('Thalassemia', thal_options)
     thal_num = thal_options.index(thal)
 
-    with open('C:/Users/athiy/Documents/1-KULIAH UDINUS/8 GENAP 23-24/Bengkel Koding/UAS/Heart-Disease-main/Heart-Disease-main/model/mean_std_values.pkl', 'rb') as f:
+    with open('../../model/mean_std_values.pkl', 'rb') as f:
         mean_std_values = pickle.load(f)
 
 
