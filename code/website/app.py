@@ -5,14 +5,14 @@ import pickle
 #model 1 KNN
 model1_filename = '../../model/modelKNN.pkl'
 
-with open(model1_filename, 'rb') as file:
-    model1 = pickle.load(file)
+with open(model1_filename, 'rb') as file1:
+    model1 = pickle.load(file1)
 
 #model 2 Random Forest
 model2_filename = '../../model/modelRandForest.pkl'
 
-with open(model2_filename, 'rb') as file:
-    model2 = pickle.load(file)
+with open(model2_filename, 'rb') as file2:
+    model2 = pickle.load(file2)
 
 def main():
     st.title('Heart Disease Prediction')
